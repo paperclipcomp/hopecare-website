@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Book a Clean | Hope Care and Cleaning Solution</title>
+<meta name="description" content="Book a free quote or schedule a clean. Quick form, response within 24 hours. No deposit required.">
+<link rel="canonical" href="https://hopecare.rent-domains.com/booking">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{brand:'#0F4C5C',accent:'#E36414',cream:'#FFFCF2',sand:'#FFE8C2',deep:'#062A33'},fontFamily:{display:['"Cormorant Garamond"','serif'],body:['Inter','sans-serif']}}}};</script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>html{scroll-behavior:smooth}body{font-family:Inter,sans-serif}</style>
+</head>
+<body class="bg-cream text-deep">
+
+<header class="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-deep/10">
+  <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2">
+      <span class="font-display text-2xl font-bold text-brand">Hope Care</span>
+      <span class="hidden sm:inline text-xs text-deep/60 uppercase tracking-widest">& Cleaning Solution</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+      <a href="/" class="hover:text-brand">Home</a>
+      <a href="/services" class="hover:text-brand">Services</a>
+      <a href="/booking" class="text-brand">Book a Clean</a>
+      <a href="/contact" class="hover:text-brand">Contact</a>
+    </nav>
+    <a href="https://wa.me/27000000000" class="bg-accent hover:bg-accent/90 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-sm">WhatsApp</a>
+  </div>
+</header>
+
+<section class="py-16">
+  <div class="max-w-3xl mx-auto px-5">
+    <p class="text-accent font-semibold uppercase tracking-widest text-sm mb-3 text-center">Book a clean</p>
+    <h1 class="font-display text-5xl font-bold text-deep text-center mb-4">Get your free, fixed quote.</h1>
+    <p class="text-deep/70 text-lg text-center mb-12 leading-relaxed">Fill in the form below — we'll come back within 24 hours with a fixed price. No deposit, no obligation.</p>
+
+    <form id="booking-form" class="bg-white border border-deep/10 rounded-2xl p-8 shadow-sm space-y-5">
+      <div>
+        <label class="block text-sm font-semibold text-deep mb-2">Your name *</label>
+        <input required name="name" type="text" class="w-full border border-deep/15 focus:border-brand focus:ring-2 focus:ring-brand/20 rounded-lg px-4 py-3 outline-none">
+      </div>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-semibold text-deep mb-2">Phone / WhatsApp *</label>
+          <input required name="phone" type="tel" class="w-full border border-deep/15 focus:border-brand focus:ring-2 focus:ring-brand/20 rounded-lg px-4 py-3 outline-none" placeholder="+27 …">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-deep mb-2">Email (optional)</label>
+          <input name="email" type="email" class="w-full border border-deep/15 focus:border-brand focus:ring-2 focus:ring-brand/20 rounded-lg px-4 py-3 outline-none">
+        </div>
+      </div>
+      <div>
+        <label class="block text-sm font-semibold text-deep mb-2">Service you need</label>
+        <select name="service" class="w-full border border-deep/15 focus:border-brand focus:ring-2 focus:ring-brand/20 rounded-lg px-4 py-3 outline-none bg-white">
+          <option>Residential cleaning (regular)</option>
+          <option>Residential cleaning (one-off)</option>
+          <option>Office / commercial cleaning</option>
+          <option>Deep clean / spring clean</option>
+          <option>Move-in / move-out clean</option>
+          <option>Post-construction clean</option>
+          <option>Other / not sure</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-semibold text-deep mb-2">Tell us about your space</label>
+        <textarea name="message" rows="4" class="w-full border border-deep/15 focus:border-brand focus:ring-2 focus:ring-brand/20 rounded-lg px-4 py-3 outline-none" placeholder="E.g. 3-bedroom flat in Pretoria, looking for fortnightly cleans starting end of May…"></textarea>
+      </div>
+      <p class="text-xs text-deep/60">By submitting this form you consent to Hope Care and Cleaning Solution contacting you about your enquiry. We do not share your details with third parties (POPIA-compliant).</p>
+      <button type="submit" class="bg-brand hover:bg-deep text-white px-6 py-3 rounded-full font-semibold shadow w-full">Send my enquiry</button>
+    </form>
+
+    <div id="success" class="hidden mt-6 bg-green-50 border border-green-200 text-green-800 rounded-xl p-5 text-center">
+      <p class="font-semibold mb-1">Thanks — we've received your enquiry.</p>
+      <p class="text-sm">We'll be in touch within 24 hours. For urgent bookings, WhatsApp us on <a href="https://wa.me/27000000000" class="underline">+27 (your number)</a>.</p>
+    </div>
+    <div id="error" class="hidden mt-6 bg-red-50 border border-red-200 text-red-800 rounded-xl p-5 text-center">
+      <p class="font-semibold mb-1">Something went wrong.</p>
+      <p class="text-sm">Please try again or WhatsApp us directly on <a href="https://wa.me/27000000000" class="underline">+27 (your number)</a>.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-cream border-t border-deep/10 py-10 text-sm">
+  <div class="max-w-6xl mx-auto px-5 flex flex-col sm:flex-row justify-between gap-3 text-deep/60">
+    <p>© <span id="year"></span> Hope Care and Cleaning Solution. All rights reserved.</p>
+    <p>POPIA-compliant · <a href="/" class="underline hover:text-brand">Home</a> · <a href="/contact" class="underline hover:text-brand">Contact</a></p>
+  </div>
+</footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const f=document.getElementById('booking-form');
+f.addEventListener('submit', async (e)=>{
+  e.preventDefault();
+  const data=Object.fromEntries(new FormData(f).entries());
+  try {
+    const r=await fetch('/api/booking',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+    if (r.ok) { f.classList.add('hidden'); document.getElementById('success').classList.remove('hidden'); window.scrollTo({top:document.getElementById('success').offsetTop-100,behavior:'smooth'}); }
+    else { document.getElementById('error').classList.remove('hidden'); }
+  } catch { document.getElementById('error').classList.remove('hidden'); }
+});
+</script>
+</body>
+</html>
